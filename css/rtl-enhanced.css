@@ -1,0 +1,157 @@
+/* Enhanced RTL Support for Arabic Pages */
+
+/* Base RTL Direction */
+body {
+    direction: rtl;
+    font-family: 'Cairo', sans-serif;
+    text-align: right;
+}
+
+/* Navigation RTL Adjustments */
+header nav {
+    flex-direction: row-reverse;
+}
+
+.logo {
+    margin-left: 0;
+    margin-right: 1rem;
+}
+
+.nav-links {
+    padding-right: 0;
+    flex-direction: row-reverse;
+}
+
+.nav-links li a {
+    margin: 0 0 0 0.5rem;
+}
+
+/* Language Switch Specific Styling */
+.language-switch {
+    margin-right: 1rem;
+    margin-left: 0;
+    border-right: 1px solid #e0e0e0;
+    border-left: none;
+}
+
+.language-switch a {
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    background-color: #f0f4f8;
+}
+
+.language-switch a:hover {
+    background-color: #e2e8f0;
+}
+
+/* Content Alignment for RTL */
+.hero, 
+.features h2,
+.mental-health-awareness h2,
+.info-resources h2,
+.testimonials h2 {
+    text-align: center;
+}
+
+/* Card and Grid Alignments */
+.feature-card,
+.awareness-card,
+.info-card,
+.support-item,
+.testimonial,
+.value-card,
+.team-member,
+.partner {
+    text-align: right;
+}
+
+/* List Item Adjustments */
+.warning-signs {
+    padding-right: 2rem;
+    padding-left: 0;
+}
+
+.warning-signs li {
+    padding-right: 1.5rem;
+    padding-left: 0;
+}
+
+.warning-signs li:before {
+    right: 0;
+    left: auto;
+}
+
+.info-card ul {
+    padding-right: 0;
+}
+
+.info-card ul li {
+    padding-right: 1.5rem;
+    padding-left: 0;
+}
+
+.info-card ul li:before {
+    content: "←";
+    right: 0;
+    left: auto;
+}
+
+/* Button Adjustments */
+.btn {
+    margin: 0.5rem;
+}
+
+/* Footer RTL Adjustments */
+.footer-content {
+    flex-direction: row-reverse;
+}
+
+.footer-section {
+    text-align: right;
+}
+
+.footer-section ul {
+    padding-right: 0;
+}
+
+/* About Page RTL Specific Styles */
+.mission p, 
+.story p,
+.about-hero p,
+.partners p,
+.team p {
+    text-align: right;
+}
+
+.container {
+    text-align: right;
+}
+
+/* Resources Page RTL Adjustments */
+.resource-content {
+    text-align: right;
+}
+
+.resource-tags {
+    justify-content: flex-start;
+}
+
+.podcast-player .player-controls {
+    flex-direction: row-reverse;
+}
+
+/* Mobile Responsiveness for RTL */
+@media (max-width: 768px) {
+    .nav-links {
+        padding-right: 0;
+    }
+    
+    .feature-grid,
+    .awareness-grid,
+    .info-grid,
+    .support-grid,
+    .testimonial-grid {
+        flex-direction: column;
+    }
+}

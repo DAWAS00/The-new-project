@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>من نحن - طالب واعي</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/rtl.css">
+    <style>
+        /* Additional styling for the About page */
+        .about-hero {
+            background-color: #f0f4f8;
+            padding: 8rem 2rem 4rem;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .mission, .values, .team, .story, .partners {
+            padding: 4rem 0;
+        }
+
+        .mission p, .story p {
+            max-width: 800px;
+            margin: 1rem auto;
+            line-height: 1.8;
+        }
+
+        .values-grid, .team-grid, .partners-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-top: 2rem;
+            justify-content: center;
+        }
+
+        .value-card {
+            background-color: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            text-align: center;
+            flex: 1 1 250px;
+        }
+
+        .team-member {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            text-align: center;
+            flex: 1 1 250px;
+        }
+
+        .member-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 auto 1.5rem;
+            object-fit: cover;
+            display: block;
+        }
+
+        .member-photo.placeholder {
+            background-color: #e0e0e0;
+        }
+
+        .team-member h3 {
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+
+        .member-title {
+            color: #3498db;
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+
+        .partner.placeholder {
+            background-color: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            text-align: center;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: 1 1 250px;
+        }
+
+        section h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #2c3e50;
+        }
+
+        @media (max-width: 768px) {
+            .values-grid, .team-grid, .partners-grid {
+                flex-direction: column;
+            }
+            
+            .about-hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">طالب واعي</div>
+            <ul class="nav-links">
+                <li><a href="index-ar.html">الرئيسية</a></li>
+                <li><a href="About-ar.html" class="active">من نحن</a></li>
+                <li><a href="resources-ar.html">المصادر</a></li>
+                <li><a href="tools-ar.html">أدوات المساعدة الذاتية</a></li>
+                <li><a href="counseling-ar.html">الاستشارات</a></li>
+                <li><a href="stories-ar.html">قصص النجاح</a></li>
+                <li><a href="contact-ar.html">اتصل بنا</a></li>
+                <li class="language-switch">
+                    <a href="about.html">English</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about-hero">
+            <div class="container">
+                <h1>عن طالب واعي</h1>
+                <p>دعم الصحة النفسية للطلاب من خلال التوعية والموارد والمجتمع</p>
+            </div>
+        </section>
+
+        <section class="mission">
+            <div class="container">
+                <h2>مهمتنا</h2>
+                <p>في طالب واعي، نؤمن بأن الصحة النفسية لا تقل أهمية عن الصحة الجسدية. مهمتنا هي تزويد الطلاب بالموارد والدعم والمجتمع الذي يحتاجونه للتغلب على تحديات الحياة الأكاديمية مع الحفاظ على صحتهم النفسية.</p>
+                <p>نهدف إلى كسر الوصمة المحيطة بقضايا الصحة النفسية وخلق بيئة يشعر فيها الطلاب بالراحة في طلب المساعدة والدعم عندما يحتاجون إليه.</p>
+            </div>
+        </section>
+
+        <section class="values">
+            <div class="container">
+                <h2>قيمنا</h2>
+                <div class="values-grid">
+                    <div class="value-card">
+                        <h3>التعاطف</h3>
+                        <p>نتعامل مع رحلة كل طالب بتفهم وتعاطف، مدركين أن تجربة كل شخص فريدة من نوعها.</p>
+                    </div>
+                    <div class="value-card">
+                        <h3>سهولة الوصول</h3>
+                        <p>نؤمن بأن موارد الصحة النفسية يجب أن تكون متاحة لجميع الطلاب، بغض النظر عن خلفياتهم أو ظروفهم.</p>
+                    </div>
+                    <div class="value-card">
+                        <h3>التعليم</h3>
+                        <p>نحن ملتزمون بتقديم معلومات دقيقة ومستندة إلى الأدلة حول الصحة النفسية لتمكين الطلاب.</p>
+                    </div>
+                    <div class="value-card">
+                        <h3>المجتمع</h3>
+                        <p>نعزز مجتمعًا داعمًا حيث يمكن للطلاب التواصل ومشاركة التجارب ودعم بعضهم البعض.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="team">
+            <div class="container">
+                <h2>فريقنا</h2>
+                <p>تأسس طالب واعي على يد مجموعة من المتخصصين في الصحة النفسية والمعلمين والطلاب السابقين الذين أدركوا الحاجة إلى دعم أفضل للصحة النفسية في البيئات الأكاديمية.</p>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <img src="imges/⚡️.jpg" alt="محمد دواس" class="member-photo">
+                        <h3>محمد دواس</h3>
+                        <p class="member-title">أخصائي نفسي إكلينيكي، المؤسس</p>
+                        <p>مع أكثر من 15 عامًا من الخبرة في العمل مع الطلاب، أدرك الدكتور الحاجة إلى موارد صحة نفسية يسهل الوصول إليها.</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-photo placeholder"></div>
+                        <h3>مايكل تشين</h3>
+                        <p class="member-title">متخصص في التعليم</p>
+                        <p>يجلب مايكل خبرته كمعلم وكطالب سابق يعاني من القلق إلى منصتنا.</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-photo placeholder"></div>
+                        <h3>عائشة باتيل</h3>
+                        <p class="member-title">مناصرة للصحة النفسية</p>
+                        <p>بعد رحلتها الخاصة مع الاكتئاب خلال فترة الدراسة الجامعية، كرست عائشة نفسها لمساعدة الطلاب الآخرين في العثور على الدعم.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="story">
+            <div class="container">
+                <h2>قصتنا</h2>
+                <p>بدأ طالب واعي في عام 2020 عندما أدرك مؤسسونا تزايد تحديات الصحة النفسية التي يواجهها الطلاب، خاصة خلال الجائحة العالمية. ما بدأ كمركز صغير للموارد نما ليصبح منصة شاملة تدعم آلاف الطلاب.</p>
+                <p>نواصل توسيع مواردنا ونطاقنا، مسترشدين بالتعليقات من الطلاب الذين نخدمهم وأحدث الأبحاث في مجال الصحة النفسية والتعليم.</p>
+            </div>
+        </section>
+
+        <section class="partners">
+            <div class="container">
+                <h2>شركاؤنا</h2>
+                <p>نتعاون مع منظمات الصحة النفسية والمؤسسات التعليمية ومجموعات الطلاب لتقديم أفضل الموارد والدعم الممكن.</p>
+                <div class="partners-grid">
+                    <div class="partner placeholder">
+                        <p>جامعة العلوم التطبيقية</p>
+                    </div>
+                    <div class="partner placeholder">
+                        <p>شبكة العافية الجامعية</p>
+                    </div>
+                    <div class="partner placeholder">
+                        <p>تحالف دعم الطلاب</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>اتصال الطوارئ</h4>
+                <p>خط الأزمات: 1-800-XXX-XXXX</p>
+            </div>
+            <div class="footer-section">
+                <h4>روابط سريعة</h4>
+                <ul>
+                    <li><a href="resources-ar.html">المصادر</a></li>
+                    <li><a href="contact-ar.html">احصل على المساعدة</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <p>جميع الحقوق محفوظة © 2024 طالب واعي</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

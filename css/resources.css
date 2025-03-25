@@ -1,0 +1,386 @@
+/* Resources Page Specific Styles */
+
+/* Hero Section */
+.resources-hero {
+    background-color: #f0f4f8;
+    padding: 8rem 2rem 4rem;
+    text-align: center;
+}
+
+.resources-hero h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.resources-hero p {
+    font-size: 1.2rem;
+    color: #34495e;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Resource Categories Navigation */
+.resource-categories {
+    padding: 3rem 2rem;
+    background-color: white;
+}
+
+.category-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.category-link {
+    padding: 0.8rem 1.5rem;
+    background-color: #f8f9fa;
+    border-radius: 30px;
+    color: #2c3e50;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.category-link:hover {
+    background-color: #e9ecef;
+}
+
+.category-link.emergency {
+    background-color: #fce4e4;
+    color: #e74c3c;
+}
+
+.category-link.emergency:hover {
+    background-color: #f8d7da;
+}
+
+/* Resource Sections */
+.resource-section {
+    padding: 4rem 2rem;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.resource-section:nth-child(odd) {
+    background-color: #f8f9fa;
+}
+
+.resource-section h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #2c3e50;
+}
+
+/* Resource Grid and Cards */
+.resource-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.resource-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.resource-card:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.resource-image {
+    height: 200px;
+    background-color: #e9ecef;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.video-placeholder,
+.podcast-image,
+.app-icon,
+.book-cover {
+    height: 200px;
+    background-color: #e9ecef;
+    position: relative;
+}
+
+.placeholder::after {
+    content: "Image";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #adb5bd;
+    font-size: 1.2rem;
+}
+
+.resource-content {
+    padding: 1.5rem;
+}
+
+.resource-content h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+.resource-content p {
+    color: #6c757d;
+    margin-bottom: 1.5rem;
+}
+
+/* Tags */
+.resource-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.tag {
+    background-color: #e9ecef;
+    color: #495057;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    text-decoration: none;
+}
+
+.tag:hover {
+    background-color: #dee2e6;
+}
+
+/* View More Button */
+.view-more {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* Video Cards */
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+}
+
+.video-container iframe {
+    border: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.play-button::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    border-style: solid;
+    border-width: 10px 0 10px 16px;
+    border-color: transparent transparent transparent #2c3e50;
+}
+
+/* Podcast Player */
+.podcast-player {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+.player-controls {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.progress-bar {
+    flex-grow: 1;
+    height: 6px;
+    background-color: #dee2e6;
+    border-radius: 3px;
+    position: relative;
+}
+
+.progress {
+    position: absolute;
+    height: 100%;
+    width: 30%;
+    background-color: #3498db;
+    border-radius: 3px;
+}
+
+.duration {
+    font-size: 0.85rem;
+    color: #6c757d;
+    margin: 0;
+}
+
+/* App Cards */
+.app-links {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.app-link {
+    background-color: #f8f9fa;
+    color: #2c3e50;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.app-link:hover {
+    background-color: #e9ecef;
+}
+
+.app-rating {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.stars {
+    color: #f39c12;
+    margin: 0;
+}
+
+.rating-count {
+    color: #6c757d;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/* Book Cards */
+.book-author {
+    font-style: italic;
+    color: #6c757d;
+    margin-bottom: 1.5rem;
+}
+
+/* Emergency Resources */
+.emergency-resources {
+    padding: 4rem 2rem;
+    background-color: #fef9f9;
+}
+
+.emergency-alert {
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.emergency-number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #e74c3c;
+    margin: 1rem 0;
+}
+
+.emergency-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.emergency-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.emergency-card h3 {
+    color: #e74c3c;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+/* Resource Finder */
+.resource-finder {
+    padding: 4rem 2rem;
+    background-color: #f0f4f8;
+}
+
+.finder-form {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+.form-group select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #495057;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .resource-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .category-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .category-link {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .emergency-grid {
+        grid-template-columns: 1fr;
+    }
+}
