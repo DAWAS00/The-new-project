@@ -2,10 +2,7 @@
 <!-- 
 The main goal of this page is to promote health awareness midnfulnees and self-care among students by offering various 
 self=help tools and resources. 
-
-
 -->
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -13,85 +10,188 @@ self=help tools and resources.
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Self-Help Tools for Conscious Students</title>
-    
-
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/tools.css">
 </head>
 <body>
-
     <header>
         <nav>
             <div class="logo">Mindful Student</div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html" class="active">About Us</a></li>
+                <li><a href="about.html">About Us</a></li>
                 <li><a href="resources.html">Resources</a></li>
-                <li><a href="selfhelptools.html">Self-Help Tools</a></li>
+                <li><a href="tools.html" class="active">Self-Help Tools</a></li>
                 <li><a href="counseling.html">Counseling</a></li>
                 <li><a href="stories.html">Success Stories</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li class="language-switch">
-                    <a href="about-ar.html">عربي</a>
+                    <a href="tools-ar.html">عربي</a>
                 </li>
             </ul>
         </nav>
     </header>
-    <h1>Self-Help Tools for Conscious Students</h1>
-    
-    <h2>1. Health Awareness Quiz</h2>
-    <p>A simple quiz to test your knowledge about scientific diseases and healthy habits.</p>
-    <form>
-        <label>What is the best way to prevent infections?</label><br>
-        <input type="radio" name="quiz" value="a"> Washing hands frequently<br>
-        <input type="radio" name="quiz" value="b"> Avoiding all human contact<br>
-        <input type="radio" name="quiz" value="c"> Taking antibiotics daily<br>
-    </form>
-    
-    <h2>2. Daily Health Journal</h2>
-    <p>Track your daily health habits:</p>
-    <form>
-        <label for="journal">Write about your health activities today:</label><br>
-        <textarea id="journal" rows="4" cols="50"></textarea><br>
-    </form>
-    
-    <h2>3. Health Risk Calculator</h2>
-    <p>Enter your details to assess your health risks:</p>
-    <form>
-        <label for="age">Age:</label>
-        <input type="number" id="age"><br>
-        <label for="smoking">Do you smoke?</label>
-        <select id="smoking">
-            <option>Yes</option>
-            <option>No</option>
-        </select><br>
-    </form>
-    
-    <h2>4. Relaxation and Meditation</h2>
-    <p>Use this guide to practice mindfulness:</p>
-    <p>Breathe deeply, close your eyes, and focus on your breath for 5 minutes.</p>
-    
-    <h2>5. First Aid Guide</h2>
-    <p>Basic steps to handle emergency situations:</p>
-    <ul>
-        <li>For minor cuts: Wash with water and apply a bandage.</li>
-        <li>For burns: Run under cool water and avoid breaking blisters.</li>
-        <li>For fainting: Lay the person down and raise their legs slightly.</li>
-    </ul>
-    
-    <h2>6. Interactive Discussion Forum</h2>
-    <p>Share your thoughts and ask health-related questions:</p>
-    <form>
-        <label for="forum">Post your question or tip:</label><br>
-        <textarea id="forum" rows="4" cols="50"></textarea><br>
-    </form>
-    
-    <h2>7. Daily Health Planner</h2>
-    <p>Plan your health-related tasks for the day:</p>
-    <form>
-        <label><input type="checkbox"> Drink 8 glasses of water</label><br>
-        <label><input type="checkbox"> Exercise for 30 minutes</label><br>
-        <label><input type="checkbox"> Eat at least 5 servings of fruits/vegetables</label><br>
 
-    </form>
-   
+    <main>
+        <section class="hero-section">
+            <div class="container">
+                <h1>Self-Help Tools for Conscious Students</h1>
+                <p>Interactive resources to support your mental wellbeing journey</p>
+            </div>
+        </section>
+
+        <section class="tools-section">
+            <div class="container">
+                <div class="tool-card">
+                    <h2>1. Health Awareness Quiz</h2>
+                    <p>A simple quiz to test your knowledge about scientific diseases and healthy habits.</p>
+                    <div class="tool-content">
+                        <form>
+                            <div class="question">
+                                <label>What is the best way to prevent infections?</label>
+                                <div class="options">
+                                    <div class="option">
+                                        <input type="radio" id="option1" name="quiz" value="a"> 
+                                        <label for="option1">Washing hands frequently</label>
+                                    </div>
+                                    <div class="option">
+                                        <input type="radio" id="option2" name="quiz" value="b"> 
+                                        <label for="option2">Avoiding all human contact</label>
+                                    </div>
+                                    <div class="option">
+                                        <input type="radio" id="option3" name="quiz" value="c"> 
+                                        <label for="option3">Taking antibiotics daily</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn primary">Submit Answer</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="tool-card">
+                    <h2>2. Daily Health Journal</h2>
+                    <p>Track your daily health habits:</p>
+                    <div class="tool-content">
+                        <form>
+                            <div class="form-group">
+                                <label for="journal">Write about your health activities today:</label>
+                                <textarea id="journal" rows="4"></textarea>
+                            </div>
+                            <button type="submit" class="btn primary">Save Entry</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="tool-card">
+                    <h2>3. Health Risk Calculator</h2>
+                    <p>Enter your details to assess your health risks:</p>
+                    <div class="tool-content">
+                        <form>
+                            <div class="form-group">
+                                <label for="age">Age:</label>
+                                <input type="number" id="age">
+                            </div>
+                            <div class="form-group">
+                                <label for="smoking">Do you smoke?</label>
+                                <select id="smoking">
+                                    <option>Yes</option>
+                                    <option>No</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn primary">Calculate Risk</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="tool-card">
+                    <h2>4. Relaxation and Meditation</h2>
+                    <p>Use this guide to practice mindfulness:</p>
+                    <div class="tool-content">
+                        <div class="meditation-guide">
+                            <p>Breathe deeply, close your eyes, and focus on your breath for 5 minutes.</p>
+                            <div class="meditation-timer">
+                                <div class="timer">5:00</div>
+                                <div class="timer-controls">
+                                    <button class="btn secondary">Start</button>
+                                    <button class="btn secondary">Pause</button>
+                                    <button class="btn secondary">Reset</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tool-card">
+                    <h2>5. First Aid Guide</h2>
+                    <p>Basic steps to handle emergency situations:</p>
+                    <div class="tool-content">
+                        <ul class="first-aid-list">
+                            <li>For minor cuts: Wash with water and apply a bandage.</li>
+                            <li>For burns: Run under cool water and avoid breaking blisters.</li>
+                            <li>For fainting: Lay the person down and raise their legs slightly.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="tool-card">
+                    <h2>6. Interactive Discussion Forum</h2>
+                    <p>Share your thoughts and ask health-related questions:</p>
+                    <div class="tool-content">
+                        <form>
+                            <div class="form-group">
+                                <label for="forum">Post your question or tip:</label>
+                                <textarea id="forum" rows="4"></textarea>
+                            </div>
+                            <button type="submit" class="btn primary">Post</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="tool-card">
+                    <h2>7. Daily Health Planner</h2>
+                    <p>Plan your health-related tasks for the day:</p>
+                    <div class="tool-content">
+                        <form class="planner-form">
+                            <div class="checklist">
+                                <div class="checklist-item">
+                                    <input type="checkbox" id="water">
+                                    <label for="water">Drink 8 glasses of water</label>
+                                </div>
+                                <div class="checklist-item">
+                                    <input type="checkbox" id="exercise">
+                                    <label for="exercise">Exercise for 30 minutes</label>
+                                </div>
+                                <div class="checklist-item">
+                                    <input type="checkbox" id="fruits">
+                                    <label for="fruits">Eat at least 5 servings of fruits/vegetables</label>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn primary">Save Plan</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Emergency Contact</h4>
+                <p>Crisis Helpline: 1-800-XXX-XXXX</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="contact.html">Get Help</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <p>&copy; 2024 Mindful Student. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
