@@ -2,7 +2,7 @@
 
 .hero-section {
     background-color: #f0f4f8;
-    padding: 6rem 2rem 2rem;
+    padding: 8rem 2rem 2rem; /* Increased top padding from 6rem to 8rem */
     text-align: center;
 }
 

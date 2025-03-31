@@ -409,3 +409,16 @@ footer {
         font-size: 1rem; /* Smaller paragraph text on small screens */
     }
 }
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 20px; /* Add some space from the left edge */
+}
+
+.logo img {
+    height: 90px;
+    width: auto;
+    object-fit: contain;
+    margin: 0; /* Remove right margin to ensure clean left alignment */
+}
