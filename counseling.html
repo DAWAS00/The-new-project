@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counseling Services | Eman platform</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/counseling.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="imges/Eman-logo.png" alt="Eman Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="tools.html">Self-Help Tools</a></li>
+                <li><a href="counseling.html" class="active">Counseling</a></li>
+                <li><a href="stories.html">Success Stories</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="language-switch">
+                    <a href="counseling-ar.html">عربي</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="container">
+                <h1>Professional Counseling Services</h1>
+                <p>Expert support for your mental health and well-being journey</p>
+            </div>
+        </section>
+
+        <section class="services-overview">
+            <div class="container">
+                <h2>Our Services</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">👥</div>
+                        <h3>Individual Counseling</h3>
+                        <p>One-on-one sessions with professional counselors to address personal concerns.</p>
+                        <a href="#book-appointment" class="btn primary">Book Session</a>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">👪</div>
+                        <h3>Group Therapy</h3>
+                        <p>Supportive group sessions focusing on shared experiences and mutual growth.</p>
+                        <a href="#group-schedule" class="btn primary">View Schedule</a>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">💻</div>
+                        <h3>Online Counseling</h3>
+                        <p>Virtual sessions available for convenient access to mental health support.</p>
+                        <a href="#online-booking" class="btn primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="counselors">
+            <div class="container">
+                <h2>Meet Our Counselors</h2>
+                <div class="counselor-grid">
+                    <div class="counselor-card">
+                        <img src="images/counselor1.jpg" alt="Dr. Sarah Johnson">
+                        <h3>Dr. Sarah Johnson</h3>
+                        <p class="specialty">Anxiety & Depression Specialist</p>
+                        <p>15+ years experience in student counseling</p>
+                        <p class="languages">Languages: English, Arabic</p>
+                    </div>
+
+                    <div class="counselor-card">
+                        <img src="images/counselor2.jpg" alt="Dr. Ahmed Hassan">
+                        <h3>Dr. Ahmed Hassan</h3>
+                        <p class="specialty">Stress Management Expert</p>
+                        <p>10+ years experience in academic counseling</p>
+                        <p class="languages">Languages: Arabic, English</p>
+                    </div>
+
+                    <div class="counselor-card">
+                        <img src="images/counselor3.jpg" alt="Dr. Lisa Chen">
+                        <h3>Dr. Lisa Chen</h3>
+                        <p class="specialty">Relationship Counselor</p>
+                        <p>12+ years experience in family therapy</p>
+                        <p class="languages">Languages: English, Chinese</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="booking-section" id="book-appointment">
+            <div class="container">
+                <h2>Book an Appointment</h2>
+                <form class="booking-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="counselor">Preferred Counselor</label>
+                        <select id="counselor" required>
+                            <option value="">Select a counselor</option>
+                            <option value="dr-sarah">Dr. Sarah Johnson</option>
+                            <option value="dr-ahmed">Dr. Ahmed Hassan</option>
+                            <option value="dr-lisa">Dr. Lisa Chen</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="session-type">Session Type</label>
+                        <select id="session-type" required>
+                            <option value="">Select session type</option>
+                            <option value="individual">Individual Counseling</option>
+                            <option value="group">Group Therapy</option>
+                            <option value="online">Online Session</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Brief description of your concerns (optional)</label>
+                        <textarea id="message" rows="4"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn primary">Request Appointment</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3>What can I expect in my first session?</h3>
+                        <p>Your first session will be an initial consultation where we discuss your concerns and establish goals for future sessions.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>How long are the sessions?</h3>
+                        <p>Individual sessions typically last 50 minutes, while group sessions are 90 minutes.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>Is my information confidential?</h3>
+                        <p>Yes, all sessions are strictly confidential and follow professional ethical guidelines.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Emergency Contact</h4>
+                <p>Crisis Helpline: 1-800-XXX-XXXX</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="contact.html">Get Help</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <p>&copy; 2024 Eman platform. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
