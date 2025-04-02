@@ -1,0 +1,112 @@
+.stories-hero {
+    background-color: #f0f4f8;
+    padding: 9rem 2rem 4rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stories-hero .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.stories-hero h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.stories-hero p {
+    font-size: 1.2rem;
+    color: #34495e;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.stories-grid {
+    padding: 4rem 2rem;
+}
+
+.story-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.story-header {
+    margin-bottom: 1.5rem;
+}
+
+.story-header h2 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.location {
+    color: #666;
+    font-style: italic;
+}
+
+.story-quote {
+    font-size: 1.2rem;
+    color: #3498db;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+    padding-left: 1rem;
+    border-left: 4px solid #3498db;
+}
+
+.key-learnings {
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+}
+
+.key-learnings h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.key-learnings ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.key-learnings li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.key-learnings li:before {
+    content: "•";
+    color: #3498db;
+    position: absolute;
+    left: 0;
+}
+
+.share-story {
+    background-color: #f0f4f8;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.share-story h2 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.share-story p {
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    color: #666;
+}
+

@@ -4,6 +4,8 @@
     background-color: #f0f4f8;
     padding: 9rem 7rem 4rem;
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .hero-section h1 {

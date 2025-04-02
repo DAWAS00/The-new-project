@@ -5,6 +5,8 @@
     background-color: #f0f4f8;
     padding: 8rem 2rem 4rem;
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .resources-hero h1 {

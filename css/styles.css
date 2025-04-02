@@ -403,7 +403,7 @@ footer {
 .logo {
     display: flex;
     align-items: center;
-    margin-left: 20px; /* Add some space from the left edge */
+    margin-right: 20px; /* Add some space from the left edge */
 }
 
 .logo img {
